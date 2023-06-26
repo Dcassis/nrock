@@ -78,11 +78,11 @@ span{
 }
 
 .carousel-inner{
-  max-width: 30rem;
+  max-width: 40%;
 }
 
 .carousel-inner > .carousel-item > img {
-  height: 78vh;
+  height: 60%;
 }
 
 .Telatotal{
