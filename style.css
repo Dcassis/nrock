@@ -23,10 +23,11 @@
 
 .Fontemenu{
   display: flex;
-  padding: 10px;
+  padding: 15px;
   margin: 0 auto;
   justify-content: space-evenly;
-  font-size: 18px;
+  font-size: x-large;
+  font-weight: 500;
   text-decoration: none;
   border-top: .7rem solid #C9BB31;
   color:aliceblue;
@@ -37,15 +38,15 @@ a:hover{
   font-weight: 900;
 }
 
-
 .titulos{
   display: grid;
   justify-content: center;
   margin: 0 auto;
+  font-weight: 500;
   font-size: larger;
   margin-bottom: 10px;
   padding:0;
-  width: 75%;
+  width: 100%;
   border-bottom: 6px solid #C9BB31;
 }
 
@@ -55,16 +56,14 @@ span{
 
 #Fotobanda{
   display: block;
-  width: 80%;
+  width: 55vw;
   margin: 0 auto;
-
 }
 
 .Release {
   display: flex;
-  flex-wrap: wrap;
-  width: 75%;
-  padding:0;
+  width: 100%;
+  padding:15px;
   margin: 0 auto;
 }
 
@@ -78,54 +77,51 @@ span{
 }
 
 .carousel-inner{
-  max-width: 40%;
+  max-width: 23vw;
 }
 
 .carousel-inner > .carousel-item > img {
-  height: 60%;
+  height: max-content;
 }
 
 .Telatotal{
   display: flex;
-  width: 75%;
+  height: 50vh;
   justify-content: space-around;
   box-sizing: content-box;
   padding: 0;
   margin:0 auto;
 }
 
-.Telatotal:hover{
-  transition: 2s;
-}
-
 .Tela{
   margin:0 auto;
   box-sizing: content-box;
-  width: 30%;
-  height:30%;
-}
-.Tela:hover{
-  transition: 1s;
-  width: 40%;
-  border:.3rem solid #C9BB31;
+  width: max-content;
 }
 
 .RedesSociais{
   display:inline-flex;
-  width: 70%;
   align-items: center;
-  text-align: left;
   margin: 0 auto;  
   font-size: xx-large;
-  padding: 0;
+  font-weight: 500;
+  padding: 20px;
   justify-content: center;
-  border-bottom:.7rem solid #C9BB31;
-  }
+  border-bottom: #C9BB31 solid 6px;
+}
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
+.RedesSociais label{
+  font-size: large;
+}
+
+.RedesSociais> a:hover{
+  opacity: 40%;
+}
+
+@media (min-width: 600px) and (max-width: 1099.98px) {
   .Fontemenu{
     width:100%;
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
   } 
   .Release {
@@ -146,7 +142,7 @@ span{
    } 
 }
 
-@media (max-width: 575.98px){
+@media (max-width: 599.98px){
   .navmenu{
     display: block;
     width: 100px;
