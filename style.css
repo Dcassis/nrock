@@ -76,27 +76,27 @@ span{
   color:aliceblue;
 }
 
-.carousel-inner{
-  max-width: 23vw;
+.containerfotos{
+  width: 30%;
 }
 
 .carousel-inner > .carousel-item > img {
-  height: max-content;
+  height: 25vw;
 }
 
 .Telatotal{
-  display: flex;
-  height: 50vh;
+  display: grid;
+  height: max-content;
+  width: 100%;
   justify-content: space-around;
-  box-sizing: content-box;
   padding: 0;
   margin:0 auto;
 }
 
 .Tela{
   margin:0 auto;
-  box-sizing: content-box;
-  width: max-content;
+  width: 560px;
+  height: 315px;
 }
 
 .RedesSociais{
@@ -128,24 +128,26 @@ span{
     line-height: 20px;
     font-size: 18px;
   }
-  
+ 
+ 
 .Fotobanda{
   width: 350px;
 }
+
   .Telatotal{
     display: grid;
    }
   .Tela{
     display: grid;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 225px;
    } 
 }
 
-@media (max-width: 599.98px){
+@media (min-width: 100px) and (max-width: 599.98px){
   .navmenu{
     display: block;
-    width: 100px;
+    width: 120px;
   }
   
   .ulmenu{
@@ -155,7 +157,7 @@ span{
   .Fontemenu{
     display: block;
     padding: 2px;
-    font-size: small;
+    font-size: medium;
     border-top: 1px solid #C9BB31;
   }
   .Release {
@@ -170,7 +172,15 @@ span{
     justify-content: space-around;
   }
   .Tela{
-    width: 200px;
-    height: 200px;
+   width: 35vw; 
+   height: 10vh;
    }
+   .RedesSociais{  
+    font-size: large;
+    padding: 15px;
+  }
+  
+  .RedesSociais label{
+    font-size: smaller;
+  }
 }
