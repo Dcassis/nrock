@@ -6,26 +6,53 @@
     <link rel="stylesheet" href="style.css">
     <title>Nrock</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
   </head>
-  <body>
-    <main>
-      <div class="navmenu">
+  <body class="container-fluid mx-auto" style="background-color: black;">
+    <main >
+      <nav class="navbar navbar-expand-sm fixed-top " style="background-color: black;">
+        <div class="container">
+          <button class="navbar-toggler" style="width: auto; border:none; margin: auto;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <ion-icon class="container my-auto" name="menu" style="color: white; height: 3.5vh; padding: 0 auto;"></ion-icon>
+          </button>
+          <div class="collapse navbar-collapse h4 pb-3 mb-3"  id="navbarNav" style="border-radius: .7rem; border-bottom: #C9BB31;">
+            <ul class="navbar-nav border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0">
+              <ul class="navbar-nav ">
+              <li class="nav-item ">
+                <a class="nav-link text-white" aria-current="page" href="#aBanda">A Banda</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#Fotos">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Vídeos">Vídeos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Socialmedia" >Contatos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </main>
+
+      <!--<div class="navmenu">
         <a class='Fontemenu' href="#aBanda">A Banda</a>
         <a class='Fontemenu' href="#Fotos">Fotos</a>
         <a class='Fontemenu' href="#Vídeos">Vídeos</a>
         <a class='Fontemenu' href="#Socialmedia">Redes Sociais</a>
-      </div>
-    </main>
+      </div>-->
     
-    <div class="bannerbanda">
-      <img class="Banner" src="./Img/bannerBanda1366.jpeg" alt="bannerBanda"/>
+    <div class="container-fluid">
+      <img class="container-fluid mt-5 pt-5" src="./Img/bannerBanda1366.jpeg" alt="bannerBanda"/>
     </div>
     
     <section>
       <div>
-      <h3 id="aBanda" class="titulos"><span> #1</span>A Banda</h3>
+      <h3 id="aBanda" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: white;text-align: center;" ><span> #1</span>A Banda<span class="border border-bottom-5"></span></h3>
     </div>
-      <div class="Release">
+      <div class="container-sm mx-auto" style="color: white; text-align: justify;font-size: medium;">
       <p >Impulsionada pela experiência e garra de seus músicos, a banda 'Nnrock estreou em 2019 e rapidamente se apresentou nas principais casas de shows de Aracaju, como o The Stone Pub, Taberna e Che Music.
   A 'Nrock conta com a originalidade de músicos experientes, a potência e diversidade vocal de THIAGO MADUREIRA (Linkin Park Tributo Br), a pegada precisa na bateria de EDWAN MARÇAL (ex-Vantura), os timbres perfeitos de DANIEL ASSIS (ex-Diva, Funkarregado), SIDCLEY GOMES (ex-Severina) e os grooves marcantes do baixista MARCO SOUSA (ex-Subburbia, Moving).
   O grupo traz um repertório eclético, transitando com segurança entre as principais vertentes do Rock e Pop ao interpretar com precisão os arranjos de bandas como Audioslave, Nickelback, Stone Temple Pilots, Nirvana, Silverchair, entre muitos outros, e todos os sucessos dos principais nomes do Pop nacional e internacional, como Tihuana, R.E.M. Raimundos, CPM22, Kings of Leon e mais.
@@ -33,68 +60,70 @@
       </p>
       </div>
     </section>
+
     <section>
-      <div>  
+      <div class="container-fluid mx-auto">  
         <img id='Fotobanda' src='./Img/nrockbanda.jpeg' alt='fotos banda'/>
       </div>
     </section>
-    <section >
+    
+    <section class="container">
       <div >
-          <h3 id="Fotos" class="titulos"><span> #2</span>Fotos</h3>
+        <h3 id="Fotos" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0"  style="color: white;text-align: center;"><span> #2</span>Fotos</h3>
+      </div>
+        <div class="container-md text-center mb-3">
+          <div class="row g-3">
+            <div class="col-6 col-sm-4">
+              <img src='./Img/Marco.jpeg' class="container-md rounded-3 img-thumbnail float-start"  style="max-width: 80%; height: 22vh;" alt="foto" />
+            </div>
+            <div class="col-6 col-sm-4">
+              <img src='./Img/Daniel2.jpeg' class="container-md rounded-3 img-thumbnail float-end" style="max-width: 80%; height: 22vh;" alt="foto" />
+            </div>  
+            <div class="col-12 col-sm-10" >
+              <img src='./Img/Thiago2.jpg' class="container-md rounded-3 img-thumbnail float-center" style="max-width: 30%; height: 22vh;" alt="foto" />
+            </div>
+            <div class="col-6 col-sm-4">
+              <img src='./Img/edwan.jpg' class="container-md rounded-3 img-thumbnail float-start" style="max-width:80%; height: 22vh;" alt="foto" />
+            </div>
+            <div class="col-6 col-sm-4">
+              <img src='./Img/siddy.jpeg' class="container-md rounded-3 img-thumbnail float-end" style="max-width: 80%; height: 22vh;" alt="foto" />
+            </div>
+          </div>
         </div>
-        <div class='containerfotos'>
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src='./Img/Marco.jpeg' class="d-block w-100" alt="foto" />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src='./Img/Daniel2.jpeg' class="d-block w-100" alt="foto" />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src='./Img/edwan.jpg' class="d-block w-100" alt="foto" />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src='./Img/Thiago2.jpg' class="d-block w-100" alt="foto" />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src='./Img/siddy.jpeg' class="d-block w-100" alt="foto" />
-            </div>
-          </div>
-          <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          </div>
-      </section>
+    </section>
 
       <section>
         <div>
-        <h3 id="Vídeos" class='titulos'><span>#3</span>Vídeos</h3>
+          <h3 id="Vídeos" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: white;text-align: center;"><span>#3</span>Vídeos</h3>
         </div>
-        <div class='Telatotal'>
-          <iframe class='Tela' src="https://www.youtube.com/embed/jAF28UE9RpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe class='Tela'src="https://www.youtube.com/embed/FfA-feLthHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </iframe>
-        <iframe class='Tela' src="https://www.youtube.com/embed/kPvWx4LlzLI" title="Sonífera Ilha" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="container-fluid mb-3">
+          <div class="row mx-auto">
+            <div class="col-md ">
+              <iframe class='container' src="https://www.youtube.com/embed/jAF28UE9RpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-md">
+              <iframe class='container' src="https://www.youtube.com/embed/FfA-feLthHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </iframe>
+            </div>
+            <div class="col-md">
+              <iframe class='container' src="https://www.youtube.com/embed/kPvWx4LlzLI" title="Sonífera Ilha" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </section>
 
-      <footer>
+      <footer class="container mx-auto">
           <div>
-          <h3 id="Socialmedia" class="titulos"><span> #4</span>Redes Sociais</h3>
+          <h3 id="Socialmedia" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: white;text-align: center;"><span> #4</span>Redes Sociais</h3>
           </div>
-        <div class='RedesSociais' >
-            <a href="https://wa.me/5579991918908" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-whatsapp"></ion-icon><label>whatsapp</label></a>
-            <a href="https://www.instagram.com/nrockoficial/" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-instagram"></ion-icon><label>Instagram</label></a>
-            <a href="mailto:nrockoficial@gmail.com" target="_blank" rel='noopener noreferrer'><ion-icon name="mail"></ion-icon><label>E-mail</label></a>
-            <a href="https://www.youtube.com/@nrockoficial/about" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-youtube"></ion-icon><label>Youtube</label></a>
+        <div class="container d-inline-flex mx-auto fs-2 text-white " >
+            <a href="https://wa.me/5579991918908" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-whatsapp" style="text-align: center; color: white"></ion-icon><label style="text-align: center; color: white;font-size: medium;" >whatsapp</label></a>
+            <a href="https://www.instagram.com/nrockoficial/" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-instagram" style="text-align: center; color: white"></ion-icon><label style="text-align: center; color: white;font-size: medium">Instagram</label></a>
+            <a href="mailto:nrockoficial@gmail.com" target="_blank" rel='noopener noreferrer'><ion-icon name="mail" style="text-align: center; color: white"></ion-icon><label style="text-align: center; color: white;font-size: medium">E-mail</label></a>
+            <a href="https://www.youtube.com/@nrockoficial/about" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-youtube" style="text-align: center; color: white"></ion-icon><label style="text-align: center; color: white;font-size: medium">Youtube</label></a>
         </div>
       </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     
