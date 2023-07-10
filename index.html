@@ -3,33 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
     <title>Nrock</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     
   </head>
-  <body class="container-fluid mx-auto" style="background-color: black;">
+  <body class="container-fluid " style="background-color: black; max-width: 1200px; width:100%; margin: 0 auto;">
+
+    <!--MENU DE NAVEGAÇÃO-->
+
     <main >
-      <nav class="navbar navbar-expand-sm fixed-top " style="background-color: black;">
-        <div class="container">
-          <button class="navbar-toggler" style="width: auto; border:none; margin: auto;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <ion-icon class="container my-auto" name="menu" style="color: white; height: 3.5vh; padding: 0 auto;"></ion-icon>
+      <nav class="navbar navbar-expand-sm fixed-top" style="background-color: black; ">
+        <div class="container border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0">
+          <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon class="container" name="menu" style="color:burlywood; height: 3.5vh; padding: 0 auto;;"></ion-icon>
           </button>
-          <div class="collapse navbar-collapse h4 pb-3 mb-3"  id="navbarNav" style="border-radius: .7rem; border-bottom: #C9BB31;">
-            <ul class="navbar-nav border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0">
-              <ul class="navbar-nav ">
-              <li class="nav-item ">
-                <a class="nav-link text-white" aria-current="page" href="#aBanda">A Banda</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link text-white" href="#Fotos">Fotos</a>
+          <div class="collapse navbar-collapse"  id="navbarNav" style="font-size: large; ">
+            <ul class="navbar-nav"> 
+              <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" style="color: burlywood;" aria-current="page" href="#aBanda">A Banda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#Vídeos">Vídeos</a>
+                <a class="nav-link" style="color: burlywood;" href="#Fotos">Fotos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#Socialmedia" >Contatos</a>
+                <a class="nav-link" style="color: burlywood;" href="#Vídeos">Vídeos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: burlywood;" href="#Socialmedia" >Contatos</a>
               </li>
             </ul>
           </div>
@@ -37,15 +38,19 @@
       </nav>
     </main>
 
-    <div class="container-fluid">
-      <img class="container-fluid mt-5 pt-5" src="./Img/bannerBanda1366.jpeg" alt="bannerBanda"/>
+<!--BANNER DA BANDA-->
+
+    <div class="container-fluid mt-5 pt-5">
+      <img class="container-fluid" src="./Img/bannerBanda1366.jpeg" alt="bannerBanda"/>
     </div>
     
+<!--SOBRE A BANDA-->
+
     <section>
       <div>
-      <h3 id="aBanda" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: white;text-align: center;" ><span> #1</span>A Banda<span class="border border-bottom-5"></span></h3>
+      <h3 id="aBanda" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: burlywood;text-align: center;" ><span style="opacity: 0%;"> #1</span><span >A Banda</span></h3>
     </div>
-      <div class="container-sm mx-auto" style="color: white; text-align: justify;font-size: medium;">
+      <div class="container-sm mx-auto" style="color:burlywood; text-align: justify;font-size: medium;">
       <p >Impulsionada pela experiência e garra de seus músicos, a banda 'Nnrock estreou em 2019 e rapidamente se apresentou nas principais casas de shows de Aracaju, como o The Stone Pub, Taberna e Che Music. 
   A 'Nrock conta com a originalidade de músicos experientes, a potência e diversidade vocal de THIAGO MADUREIRA (Linkin Park Tributo Br), a pegada precisa na bateria de EDWAN MARÇAL (ex-Vantura), os timbres perfeitos de DANIEL ASSIS (ex-Diva, Funkarregado), SIDCLEY GOMES (ex-Severina) e os grooves marcantes do baixista MARCO SOUSA (ex-Subburbia, Moving).<br><br>
   O grupo traz um repertório eclético, transitando com segurança entre as principais vertentes do Rock e Pop ao interpretar com precisão os arranjos de bandas como Audioslave, Nickelback, Stone Temple Pilots, Nirvana, Silverchair, entre muitos outros, e todos os sucessos dos principais nomes do Pop nacional e internacional, como Tihuana, R.E.M. Raimundos, CPM22, Kings of Leon e mais.
@@ -54,42 +59,46 @@
       </div>
     </section>
 
+    <!--FOTO BANDA-->
+
     <section>
       <div class="container-fluid mx-auto">  
-        <img id='Fotobanda' src='./Img/nrockbanda.jpeg' alt='fotos banda'/>
+        <img id='Fotobanda' src='./Img/nrockbanda.jpeg' alt='fotos banda' style="max-width: 60vw; display: block; margin: 0 auto;"/>
       </div>
     </section>
     
+<!--FOTOS-->
+
     <section class="container">
       <div >
-        <h3 id="Fotos" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0"  style="color: white;text-align: center;"><span> #2</span>Fotos</h3>
+        <h3 id="Fotos" class="container my-5 py-5 mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0"  style="color: burlywood;text-align: center;"><span style="opacity: 0%;"> #2</span>Fotos</h3>
       </div>
-        <div class="container-md text-center mb-3">
-          <div class="row g-3">
+        <div class="container-md text-center my-3 py-3">
+          <div class="row g-2">
             <div class="col-6 col-sm-4">
-              <img src='./Img/Marco.jpeg' class="container-md rounded-3 img-thumbnail float-start"  style="max-width: 80%; height: 22vh;" alt="foto" />
+              <img src='./Img/Marco.jpeg' class="container-md rounded-5 float-start "  style="max-width: 80%; height: 22vh;" alt="foto" />
             </div>
             <div class="col-6 col-sm-4">
-              <img src='./Img/Daniel2.jpeg' class="container-md rounded-3 img-thumbnail float-end" style="max-width: 80%; height: 22vh;" alt="foto" />
+              <img src='./Img/Daniel2.jpeg' class="container-md rounded-5 float-end" style="max-width: 80%; height: 22vh;" alt="foto" />
             </div>  
             <div class="col-12 col-sm-10" >
-              <img src='./Img/Thiago2.jpg' class="container-md rounded-3 img-thumbnail float-center" style="max-width: 30%; height: 22vh;" alt="foto" />
+              <img src='./Img/Thiago2.jpg' class="container-md rounded-5  float-center" style="max-width: 30%; height: 22vh;" alt="foto" />
             </div>
             <div class="col-6 col-sm-4">
-              <img src='./Img/edwan.jpg' class="container-md rounded-3 img-thumbnail float-start" style="max-width:80%; height: 22vh;" alt="foto" />
+              <img src='./Img/edwan.jpg' class="container-md rounded-5 float-start" style="max-width:80%; height: 22vh;" alt="foto" />
             </div>
             <div class="col-6 col-sm-4">
-              <img src='./Img/siddy.jpeg' class="container-md rounded-3 img-thumbnail float-end" style="max-width: 80%; height: 22vh;" alt="foto" />
+              <img src='./Img/siddy.jpeg' class="container-md rounded-5 float-end" style="max-width: 80%; height: 22vh;" alt="foto" />
             </div>
           </div>
         </div>
     </section>
 
-      <section>
+      <section class="container-fluid">
         <div>
-          <h3 id="Vídeos" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: white;text-align: center;"><span>#3</span>Vídeos</h3>
+          <h3 id="Vídeos" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: burlywood;text-align: center;"><span style="opacity: 0%;">#3</span>Vídeos</h3>
         </div>
-        <div class="container-fluid mb-3">
+        <div class="container-fluid my-3 py-3">
           <div class="row mx-auto">
             <div class="col-md ">
               <iframe class='container' src="https://www.youtube.com/embed/jAF28UE9RpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -105,15 +114,15 @@
         </div>
       </section>
 
-      <footer class="container mx-auto">
+      <footer class="container-fluid mx-auto" >
           <div>
-          <h3 id="Socialmedia" class="container mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: white;text-align: center;"><span> #4</span>Contatos</h3>
+          <h3 id="Socialmedia" class="container mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: burlywood;text-align: center;"><span style="opacity: 0%;"> #4</span>Contatos</h3>
           </div>
-        <div class="container d-inline-flex mx-auto fs-2 text-white " >
-            <a href="https://wa.me/5579991918908" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-whatsapp" style="text-align: center; color: white"></ion-icon><label style="text-align: center; color: white;font-size: medium;" >whatsapp</label></a>
-            <a href="https://www.instagram.com/nrockoficial/" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-instagram" style="text-align: center; color: white"></ion-icon><label style="text-align: center; color: white;font-size: medium">Instagram</label></a>
-            <a href="mailto:nrockoficial@gmail.com" target="_blank" rel='noopener noreferrer'><ion-icon name="mail" style="text-align: center; color: white"></ion-icon><label style="text-align: center; color: white;font-size: medium">E-mail</label></a>
-            <a href="https://www.youtube.com/@nrockoficial/about" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-youtube" style="text-align: center; color: white"></ion-icon><label style="text-align: center; color: white;font-size: medium">Youtube</label></a>
+        <div class="container d-inline-flex mx-auto fs-2" >
+            <a href="https://wa.me/5579991918908" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-whatsapp" style="text-align: center; color: burlywood"></ion-icon><label style="text-align: center; color: burlywood;font-size: medium;" >whatsapp</label></a>
+            <a href="https://www.instagram.com/nrockoficial/" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-instagram" style="text-align: center; color: burlywood"></ion-icon><label style="text-align: center; color: burlywood;font-size: medium">Instagram</label></a>
+            <a href="mailto:nrockoficial@gmail.com" target="_blank" rel='noopener noreferrer'><ion-icon name="mail" style="text-align: center; color: burlywood"></ion-icon><label style="text-align: center; color: burlywood;font-size: medium">E-mail</label></a>
+            <a href="https://www.youtube.com/@nrockoficial/about" target="_blank" rel='noopener noreferrer'><ion-icon name="logo-youtube" style="text-align: center; color: burlywood"></ion-icon><label style="text-align: center; color: burlywood;font-size: medium">Youtube</label></a>
         </div>
       </footer>
 

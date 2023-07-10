@@ -1,20 +1,11 @@
 *{
-  width:100%;
-  max-width: 1200px;
-  margin: 0 auto;
- }
-
-span{
-  opacity: 0;
-}
-
-
-#Fotobanda{
-  display: block;
-  max-width: 60vw;
+  max-width: 1200px; 
+  width:100%; 
   margin: 0 auto;
 }
-.carousel-inner > .carousel-item > img {
-  max-height: 45vh;
-  position: static;
+
+main .nav-item a:hover{
+  font-weight: 900;
+  text-shadow: 2px 2px 2px;
+  transition: all .5s;
 }
