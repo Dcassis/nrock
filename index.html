@@ -6,7 +6,14 @@
     <title>Nrock</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    
+    <style>
+      .card-title, .card-text{
+        color: burlywood;
+      }
+      .text-body-secondary{
+        color:white
+      }
+    </style>    
   </head>
   
   <body style="background-color: black;">
@@ -14,24 +21,24 @@
     <!--MENU DE NAVEGAÇÃO-->
 
     <main>
-      <nav class="navbar navbar-expand-sm fixed-top">
-        <div class="container-fluid border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0">
-                    
-          <a class="navbar-brand" href="#">
-            <img src="./Img/logobranca_fundoDark.jpeg" alt="Logo" style="width: 100px;">
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-            <ion-icon name="menu" style="color:burlywood; height: 3.5vh;"></ion-icon>
-          </button>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0 ">
           
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ps-3 fs-6">
+          <div class="container-fluid d-flex flex-row" >
+          <a class="navbar-brand" href="#">
+            <img src="./Img/logobranca_fundoDark.jpeg" alt="Logo" style="width: 100px; align-items: end;">
+          </a>
+          <button class="navbar-toggler w-25 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <ion-icon class="align-self-end" name="menu" style="color:burlywood;height: 3.5vh; align-self: auto"></ion-icon>
+          </button>
+        </div>
+          <div class="collapse navbar-collapse" style="text-align: center;" id="navbarNav">
+            <ul class="navbar-nav d-flex flex" style="margin: 0 auto; padding:0 auto;">
               <li class="nav-item">
                 <a class="nav-link" style="color: burlywood;" aria-current="page" href="#aBanda">A Banda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="color: burlywood;" href="#Fotos">Fotos</a>
+                <a class="nav-link" style="color: burlywood;" href="#Fotos">Integrantes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" style="color: burlywood;" href="#Vídeos">Vídeos</a>
@@ -40,6 +47,7 @@
                 <a class="nav-link" style="color: burlywood;" href="#Socialmedia" >Contatos</a>
               </li>
             </ul>
+          </div>
           </div>
         </div>
       </nav>
@@ -74,50 +82,112 @@
       </div>
     </section>
     
-  <!--FOTOS-->
+  <!--INTEGRANTES-->
 
-    <section class="container">
+    <section class="container-sm" style="margin: 0 auto;"> 
       <div >
-        <h3 id="Fotos" class="container my-2 py-2 mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0"  style="color: burlywood;text-align: center;"><span style="opacity: 0%;"> #2</span>Fotos</h3>
+        <h3 id="Fotos" class="container my-2 py-2 mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0"  style="color: burlywood;text-align: center;"><span style="opacity: 0%;"> #2</span>Integrantes</h3>
       </div>
-        <div class="container-md text-center my-3 py-3">
-          <div class="row g-2">
-            <div class="col-6 col-sm-4">
-              <img src='./Img/Marco.jpeg' class="container-md rounded-5 float-start "  style="max-width: 80%; height: 22vh;" alt="foto" />
-            </div>
-            <div class="col-6 col-sm-4">
-              <img src='./Img/Daniel2.jpeg' class="container-md rounded-5 float-end" style="max-width: 80%; height: 22vh;" alt="foto" />
-            </div>  
-            <div class="col-12 col-sm-10" >
-              <img src='./Img/Thiago2.jpg' class="container-md rounded-5  float-center" style="max-width: 30%; height: 22vh;" alt="foto" />
-            </div>
-            <div class="col-6 col-sm-4">
-              <img src='./Img/edwan.jpg' class="container-md rounded-5 float-start" style="max-width:80%; height: 22vh;" alt="foto" />
-            </div>
-            <div class="col-6 col-sm-4">
-              <img src='./Img/siddy.jpeg' class="container-md rounded-5 float-end" style="max-width: 80%; height: 22vh;" alt="foto" />
+
+      <div class="card gx-5 mb-3 pb-2 bg-black" style="max-width: 500px;">
+        <div class="row"  style="border: 2px solid burlywood">
+          <div class="col-md-4 my-auto mx-auto">
+            <img src="./Img/marcoOficial.jpeg" class="img-fluid rounded-start" alt="foto">
+          </div>
+          <div class="col-md-8" >
+            <div class="card-body">
+              <h5 class="card-title">Marco Sousa</h5>
+              <p class="card-text" style="color:burlywood" >Baixista<br> Principais influências: Live, Chevelle, The Police, Alter Bridge.</p>
+              <p class="card-text"> Instagram</p>
+              <p class="card-text">@marcosousa.ntcoz</p>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="card gx-5 mb-3 pb-2 bg-black" style="max-width: 500px;">
+        <div class="row"  style="border: 2px solid burlywood">
+          <div class="col-md-4 my-auto mx-auto">
+            <img src="./Img/Daniel2.jpeg" class="img-fluid rounded-start" alt="foto">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Daniel Assis</h5>
+              <p class="card-text">Guitarrista <br> Principais influências: Guns N'Roses, Metallica, John Mayer, Os Paralamas do Sucesso, Engenheiros do Hawaii.</p>
+              <p class="card-text"> Instagram</p>
+              <p class="card-text">@dcassis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card gx-5 mb-3 pb-2 bg-black" style="max-width: 500px;">
+        <div class="row"  style="border: 2px solid burlywood">
+          <div class="col-md-4 my-auto mx-auto">
+            <img src="./Img/Thiago.jpeg" class="img-fluid rounded-start" alt="foto">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Thiago Madureira</h5>
+              <p class="card-text">Vocalista <br>Principais influências: Killswitch Engage, For Today, Fresno.</p>
+              <p class="card-text"> Instagram</p>
+              <p class="card-text">@agohmad</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      
+      <div class="card gx-5 mb-3 pb-2 bg-black" style="max-width: 500px;">
+        <div class="row"  style="border: 2px solid burlywood">
+          <div class="col-md-4 my-auto mx-auto">
+            <img src="./Img/baterista.jpeg" class="img-fluid rounded-start" alt="foto">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Edwan Marçal</h5>
+              <p class="card-text">Baterista</p>
+              <!--<p class="card-text"> Instagram</p>
+              <p class="card-text">@xxxxxx</p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card gx-5 mb-3 pb-2 bg-black" style="max-width: 500px;">
+        <div class="row"  style="border: 2px solid burlywood">
+          <div class="col-md-4 my-auto mx-auto">
+            <img src="./Img/siddy1.jpeg" class="img-fluid rounded-start" alt="foto">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Sidcley Gomes</h5>
+              <p class="card-text">Guitarrista<br>Principais influências: Pantera, Pearl Jam, AudioSlave, Linkin Park</p>
+              <p class="card-text"> Instagram</p>
+              <p class="card-text">@siddy_clay</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!--VÍDEOS-->
 
-      <section class="container-fluid">
+      <section class="container-fluid mx-auto">
         <div>
           <h3 id="Vídeos" class="container my-2 py-2 mb-5 mx-auto border border-warning-subtle border-5 border-top-0 border-start-0 border-end-0" style="color: burlywood;text-align: center;"><span style="opacity: 0%;">#3</span>Vídeos</h3>
         </div>
         <div class="container-fluid my-3 py-3">
           <div class="row mx-auto">
-            <div class="col-md ">
-              <iframe class='container' src="https://www.youtube.com/embed/jAF28UE9RpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="col-md ratio ratio-16x9">
+              <iframe class='container' src="https://www.youtube.com/embed/jAF28UE9RpM"></iframe>
             </div>
-            <div class="col-md">
-              <iframe class='container' src="https://www.youtube.com/embed/FfA-feLthHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="col-md ratio ratio-16x9">
+              <iframe class='container' src="https://www.youtube.com/embed/FfA-feLthHQ"></iframe>
               </iframe>
             </div>
-            <div class="col-md">
-              <iframe class='container' src="https://www.youtube.com/embed/kPvWx4LlzLI" title="Sonífera Ilha" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="col-md ratio ratio-16x9">
+              <iframe class='container' src="https://www.youtube.com/embed/kPvWx4LlzLI"></iframe>
             </div>
           </div>
         </div>
